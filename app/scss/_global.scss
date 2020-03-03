@@ -19,6 +19,7 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
+	outline-style: none;
 }
 
 ul,
@@ -28,20 +29,13 @@ li {
 	list-style: none;
 }
 
-p {
-	font-family: 'Open Sans',
-		sans-serif;
-	font-size: 16px;
-	color: #22191a;
-	line-height: 28px;
-}
-
 
 body {
-	font-family: 'Fjalla One',
+	font-family: 'Montserrat-Bold',
 		sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
+	font-size: 16px;
 }
 
 * {
@@ -49,29 +43,13 @@ body {
 	padding: 0;
 }
 
-input {
-	outline: none;
-	border: none;
-}
-
-textarea {
-	outline: none;
-	border: none;
-}
-
-// .wrapper {
-// 	display: flex;
-// 	flex-direction: column;
-// 	min-height: 100%;
-// }
-
 
 .footer {
 	flex: 0 0 auto;
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1410px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;

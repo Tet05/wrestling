@@ -4,7 +4,134 @@
 @import "global";
 
 
+.header {
+	position: relative;
+}
+
+.bg {
+	background-color: #f8f5f0;
+	height: 131px;
+}
+
+.header__inner {
+	height: 105px;
+}
+
+.header__logo {
+	position: absolute;
+	top: 27px;
+
+	&-title {
+		margin-left: 233px;
+		margin-top: 8px;
+		text-transform: uppercase;
+		@include f600;
+		font-size: 18px;
+	}
+
+	&-item {
+		button {
+			border-radius: 45px;
+			padding: 11px 40px;
+			text-transform: uppercase;
+			@include f500;
+			color: #fff;
+			background-color: rgba($color: #fff, $alpha: 0.15);
+			border: 1px solid rgba($color: #fff, $alpha: 0.8);
+			margin-right: 25px;
+
+		}
+
+		img {
+			height: 24px;
+			width: 24px;
+
+		}
+
+		p {
+			height: 33px;
+			border-right: 1px solid #FFD80F;
+			background-color: #FFD80F;
+			margin-right: 5px;
+			margin-top: 15px;
+		}
+
+		span {
+			@include f700;
+			font-size: 28px;
+			width: 30px;
+			letter-spacing: 1px;
+			margin-right: 10px;
+		}
+	}
+
+	&-date {
+		max-width: 20px;
+		font-family: "Oswald-Regular",
+			sans-serif;
+		font-weight: 400px;
+		font-size: 12px;
+	}
+}
+
+.header__navbar {
+
+	background-color: #FFE160;
+	border-top: 3px solid #FFD210;
+	border-bottom: 3px solid #FFD210;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #001533;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.navbar {
+	margin-left: 211px;
+
+	.active {
+		opacity: 1;
+		@include f600;
+	}
+
+	a {
+		@include f500;
+		text-transform: uppercase;
+		opacity: 0.6;
+		margin-right: 8px;
+		transition: all ease 0.2s;
+	}
+}
+
+.slider {
+	background-color: rgb(99, 89, 74);
+}
+
+.slider__inner {
+	img {}
+}
 
 
+
+.slick-dots {
+	position: absolute;
+	bottom: -25px;
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+
+	li {
+		width: 30px;
+		height: 30px;
+		background-color: red;
+		border-radius: 50%;
+	}
+}
 
 @import "media";
