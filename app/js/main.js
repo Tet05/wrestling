@@ -2,17 +2,17 @@ $( function () {
 
 	$( '.slider__inner' ).slick( {
 		dots: true,
+		arrows: false,
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		// autoplay: true,
-		// autoplaySpeed: 2000,
-		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		centerMode: true,
 		centerPadding: '60px',
 		responsive: [
 			{
-				breakpoint: 1355,
+				breakpoint: 1920,
 				settings: {
 					autoplay: true,
 					centerMode: true,
@@ -24,18 +24,18 @@ $( function () {
 				}
 			},
 			{
-				breakpoint: 1035,
+				breakpoint: 1335,
 				settings: {
 					autoplay: true,
 					centerMode: true,
 					centerPadding: '40px',
-					slidesToShow: 3,
+					slidesToShow: 2,
 					slidesToScroll: 3,
 					infinite: true,
 				}
 			},
 			{
-				breakpoint: 690,
+				breakpoint: 950,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1

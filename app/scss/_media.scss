@@ -1,4 +1,7 @@
 @media (max-width: 1530px) {
+	.header__logo-title {
+		font-size: 16px;
+	}
 
 	.preview__inner,
 	.video__inner {
@@ -14,6 +17,9 @@
 }
 
 @media (max-width: 1200px) {
+	.header__logo-title {
+		font-size: 12px;
+	}
 
 	.preview__inner,
 	.video__inner {
@@ -67,7 +73,7 @@
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 995px) {
 
 	.preview__inner {
 
@@ -195,6 +201,30 @@
 }
 
 @media (max-width: 880px) {
+	.header__logo-title {
+		max-width: 200px;
+	}
+
+	.header__logo-item {
+		position: relative;
+
+		button {
+			padding: 5px 20px;
+			font-size: 16px;
+			align-items: center;
+
+			right: 0;
+			position: absolute;
+
+		}
+
+		img,
+		p,
+		span,
+		.header__logo-date {
+			display: none;
+		}
+	}
 
 	.preview__inner,
 	.video__inner {
@@ -210,6 +240,19 @@
 }
 
 @media (max-width: 560px) {
+	.header__logo-title {
+		display: none;
+	}
+
+	.navbar-light .navbar-toggler {
+		margin-top: -125px;
+
+	}
+
+	.navbar-toggler {
+		background-color: rgba($color: #fff, $alpha: 0.15);
+		border: 2px solid rgba($color: #fff, $alpha: 0.8);
+	}
 
 	.wrapper .preview__bg-subtitle {
 		right: 20%;
