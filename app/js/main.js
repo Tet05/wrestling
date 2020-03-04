@@ -1,42 +1,62 @@
 $( function () {
 
 	$( '.slider__inner' ).slick( {
-		slidesToShow: 3,
 		dots: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+		arrows: true,
 		centerMode: true,
-		centerPadding: '50px',
+		centerPadding: '60px',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1355,
 				settings: {
-					arrows: false,
+					autoplay: true,
 					centerMode: true,
 					centerPadding: '40px',
-					slidesToShow: 3
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 1035,
 				settings: {
-					arrows: false,
+					autoplay: true,
 					centerMode: true,
 					centerPadding: '40px',
-					slidesToShow: 1
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
 				}
-			}
+			},
+			{
+				breakpoint: 690,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+
 		]
 	} );
 
 
 	$( '.team__inner' ).slick( {
 		dots: true,
-		infinite: false,
-		speed: 300,
+		infinite: true,
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 2,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1355,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
@@ -45,49 +65,67 @@ $( function () {
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 1035,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 2
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 690,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
-			}
+			},
 
 		]
 	} );
 
 	$( '.partners__inner' ).slick( {
+		dots: true,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
 		centerMode: true,
 		centerPadding: '60px',
-		slidesToShow: 4,
-		dots: true,
-		arrows: false,
-
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1355,
 				settings: {
-					arrows: false,
+					autoplay: true,
 					centerMode: true,
 					centerPadding: '40px',
-					slidesToShow: 3
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 1035,
 				settings: {
-					arrows: false,
+					autoplay: true,
 					centerMode: true,
 					centerPadding: '40px',
-					slidesToShow: 1
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
 				}
-			}
+			},
+			{
+				breakpoint: 690,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+
 		]
 	} );
 
