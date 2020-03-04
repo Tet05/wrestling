@@ -20,6 +20,13 @@ a {
 	text-decoration: none;
 	color: #fff;
 	outline-style: none;
+
+	&:hover {
+		display: inline-block;
+		text-decoration: none;
+		color: rgb(163, 161, 161);
+		outline-style: none;
+	}
 }
 
 ul,

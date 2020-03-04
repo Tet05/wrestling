@@ -1,0 +1,323 @@
+@media (max-width: 1530px) {
+
+	.preview__inner,
+	.video__inner {
+		img {
+			max-width: 380px;
+		}
+
+		&-text {
+			font-size: 20px;
+			width: 380px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.preview__inner,
+	.video__inner {
+		img {
+			max-width: 320px;
+
+		}
+
+		&-text {
+			font-size: 20px;
+			width: 310px;
+		}
+	}
+
+	.interview__inner {
+		&-item {
+			margin-right: 10px;
+		}
+
+		&-img {
+			max-width: 600px;
+			min-height: 634px
+		}
+
+		&-title {
+			font-size: 13px;
+			left: 40px;
+			bottom: 150px;
+		}
+
+		&-text {
+			font-size: 32px;
+			left: 40px;
+		}
+	}
+
+	.interview__item {
+		margin-bottom: 30px;
+
+		img {
+			margin-right: 15px;
+		}
+
+		&-title {
+			font-size: 22px;
+			min-width: 260px;
+		}
+
+	}
+
+}
+
+
+@media (max-width: 992px) {
+
+	.preview__inner {
+		img {
+			max-width: 290px;
+		}
+
+		&-text {
+			font-size: 16px;
+			width: 280px;
+		}
+	}
+
+	.interview__inner {
+		flex-wrap: wrap;
+
+		&-item {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		&-img {
+			max-width: 800px;
+			min-height: 634px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.interview__item {
+		margin-left: 10px;
+
+		&-title {
+			padding-top: 10px;
+			margin-bottom: 60px;
+		}
+	}
+
+	.video__inner {
+		img {
+			max-width: 290px;
+		}
+
+		&-text {
+			font-size: 16px;
+			width: 260px;
+		}
+	}
+}
+
+@media (max-width: 910px) {
+	.wrapper {
+		margin-bottom: 50px;
+	}
+
+	.interview__inner {
+		margin-bottom: 50px;
+	}
+
+	.wrapper .preview__bg-subtitle {
+		right: 30%;
+		top: 35px;
+	}
+
+	.wrapper .video__bg-subtitle {
+		right: 45%;
+	}
+
+	.wrapper .preview__bg-suptitle,
+	.wrapper .video__bg-suptitle {
+		bottom: -120px;
+		right: 40%;
+		color: #004575;
+
+	}
+
+
+	.preview__inner,
+	.video__inner {
+		flex-wrap: wrap;
+
+		img {
+			max-width: 450px;
+			margin: 15px;
+		}
+
+		&-title {
+			margin-left: 30px;
+		}
+
+		&-text {
+			font-size: 28px;
+			width: 430px;
+			margin-left: 30px;
+		}
+	}
+
+	.interview__inner {
+
+		&-img {
+			max-width: 700px;
+			min-height: 534px
+		}
+	}
+
+	.interview__item {
+		margin-left: 10px;
+
+		&-title {
+			margin-bottom: 40px;
+			max-width: 311px;
+		}
+	}
+}
+
+
+@media (max-width: 560px) {
+
+	.wrapper .preview__bg-subtitle {
+		right: 20%;
+
+	}
+
+	.wrapper .video__bg-subtitle {
+		right: 43%;
+	}
+
+	.wrapper .preview__bg-suptitle,
+	.wrapper .preview__bg-suptitle {
+		right: 33%;
+	}
+
+	.preview__inner,
+	.video__inner {
+
+		img {
+			max-width: 400px;
+
+		}
+
+		&-text {
+			font-size: 21px;
+			width: 380px;
+		}
+	}
+
+	.interview__inner {
+
+		&-img {
+			max-width: 500px;
+			min-height: 334px
+		}
+
+		&-title {
+			font-size: 13px;
+			bottom: 120px;
+		}
+
+		&-text {
+			font-size: 28px;
+			max-width: 450px;
+		}
+	}
+}
+
+@media (max-width: 460px) {
+
+	.wrapper .preview__bg-subtitle,
+	.wrapper .video__bg-subtitle {
+		font-size: 26px;
+
+	}
+
+	.wrapper .preview__bg-suptitle,
+	.wrapper .video__bg-suptitle {
+		font-size: 28px;
+	}
+
+	.preview__inner,
+	.video__inner {
+		img {
+			max-width: 320px;
+		}
+
+		&-text {
+			font-size: 18px;
+			width: 320px;
+		}
+	}
+
+	.video__inner {
+		&-text {
+			font-size: 14px;
+			width: 290px;
+		}
+	}
+
+	.interview__inner {
+
+		&-img {
+			max-width: 300px;
+			min-height: 234px
+		}
+
+		&-title {
+			font-size: 13px;
+			bottom: 120px;
+		}
+
+		&-text {
+			font-size: 16px;
+			max-width: 250px;
+		}
+	}
+
+	.interview__item {
+		margin-left: 10px;
+
+		&-title {
+			font-size: 18px;
+			max-width: 200px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+
+	.wrapper .preview__bg-subtitle,
+	.wrapper .video__bg-subtitle {
+		font-size: 18px;
+		margin-bottom: 10px;
+
+	}
+
+	.wrapper .preview__bg-suptitle,
+	.wrapper .video__bg-suptitle {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.preview__inner,
+	.video__inner {
+		img {
+			max-width: 280px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			font-size: 18px;
+			width: 260px;
+			margin: 0;
+		}
+	}
+}

@@ -3,15 +3,16 @@
 @import "fonts";
 @import "global";
 
+.content {
+	background-color: #f8f5f0;
+	z-index: 100;
+
+}
 
 .header {
 	position: relative;
 }
 
-.bg {
-	background-color: #f8f5f0;
-	height: 131px;
-}
 
 .header__inner {
 	height: 105px;
@@ -39,7 +40,6 @@
 			background-color: rgba($color: #fff, $alpha: 0.15);
 			border: 1px solid rgba($color: #fff, $alpha: 0.8);
 			margin-right: 25px;
-
 		}
 
 		img {
@@ -111,27 +111,178 @@
 }
 
 .slider__inner {
-	img {}
-}
+	max-width: 1920px;
+	margin: 110px 0px 52px;
 
 
+	img {
+		max-width: 750px;
+		margin-right: 30px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 610px;
 
-.slick-dots {
-	position: absolute;
-	bottom: -25px;
-	display: flex;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	text-align: center;
-
-	li {
-		width: 30px;
-		height: 30px;
-		background-color: red;
-		border-radius: 50%;
 	}
 }
+
+
+
+// end slider
+// start preview
+
+.wrapper {
+	position: relative;
+	margin-bottom: 200px;
+
+	.preview__bg-image,
+	.video__bg-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 1072px;
+	}
+
+
+
+	.preview__bg-suptitle,
+	.preview__bg-subtitle,
+	.video__bg-suptitle,
+	.video__bg-subtitle {
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 0;
+		color: #004575;
+		font-size: 32px;
+		padding: 5px;
+		@include f600;
+	}
+
+	.preview__bg-subtitle,
+	.video__bg-subtitle {
+		top: 0;
+		position: absolute;
+		right: 41%;
+	}
+
+	.preview__bg-suptitle,
+	.video__bg-suptitle {
+		right: 45%;
+		position: absolute;
+		color: #ffffff;
+	}
+
+}
+
+.preview__inner,
+.video__inner {
+	margin-top: 200px;
+
+	img {
+		position: relative;
+		max-width: 450px;
+	}
+
+	&-title {
+		position: absolute;
+		bottom: 108px;
+		left: 30px;
+		color: #FFD80F;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+
+	&-text {
+		position: absolute;
+		bottom: 20px;
+		left: 31px;
+		color: #ffffff;
+		font-size: 26px;
+		width: 420px;
+	}
+}
+
+// end preview
+// start interview
+
+
+.interview__bg-image {}
+
+.interview__inner {
+	margin-bottom: 200px;
+
+	&-item {
+		position: relative;
+		margin-right: 30px;
+
+	}
+
+	&-img {
+		max-width: 800px;
+		min-height: 634px;
+	}
+
+	&-title {
+		position: absolute;
+		bottom: 196px;
+		left: 76px;
+		color: #FFD80F;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	&-text {
+		position: absolute;
+		bottom: 45px;
+		left: 76px;
+		color: #ffffff;
+		font-size: 48px;
+		width: 678px;
+	}
+}
+
+.interview__item {
+	margin-bottom: 30px;
+
+	img {
+		margin-right: 20px;
+	}
+
+	&-title {
+		font-size: 26px;
+		color: #004575;
+		min-width: 311px;
+		margin-bottom: 30px;
+	}
+
+	&-author {
+		font-size: 13px;
+		@include f400;
+		color: #313131;
+	}
+}
+
+// end interview
+// stsrt video
+.video__inner {
+	&-title {
+		bottom: 130px;
+
+
+	}
+
+	&-text {
+		font-size: 26px;
+		width: 424px;
+		line-height: 32px;
+	}
+
+}
+
+.wrapper .video__bg-subtitle {
+	right: 46%;
+}
+
+// end video
 
 @import "media";

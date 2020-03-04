@@ -1,10 +1,10 @@
 $( function () {
 
 	$( '.slider__inner' ).slick( {
-		centerMode: true,
-		centerPadding: '10px',
 		slidesToShow: 3,
 		dots: true,
+		centerMode: true,
+		centerPadding: '50px',
 		responsive: [
 			{
 				breakpoint: 768,
